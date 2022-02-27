@@ -9,7 +9,7 @@
       <p class="card-text">Previos Close : ${{api.previousClose}}</p>
       <form action={%url 'add_stock'%} method= "POST">
         {% csrf_token %}
-        <button type="submit" placeholder="Buy" value={{stock.symbol}} name ="ticker" class="btn btn-primary"/>Buy</button>
+        <button type="submit" placeholder="Buy" value={{api.symbol}} name ="ticker" class="btn btn-primary"/>Buy</button>
       </form>
     </div>
   </div>
